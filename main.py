@@ -27,15 +27,16 @@ def find_mismatch(text):
 
 
 def main():
-    choice = input()
+    choice = input().upper()
     text = input()
     mismatch = find_mismatch(text)
-    choice = choice.upper()
-    # Printing answer, write your code here
     if choice == "I":
         print(mismatch)
     else:
-        print("Success" if mismatch == "Success" else "Mismatch")
+        if mismatch == "Success":
+            print("Success")
+        else:
+            print("Mismatch")
 
 if __name__ == "__main__":
     main()
