@@ -29,7 +29,10 @@ def find_mismatch(text):
 def main():
     text = "[({])}"
     mismatch = find_mismatch(text)
-    print(mismatch)
+    if mismatch == "Success":
+        print(mismatch)
+    else:
+        print(mismatch)
 
 
 if __name__ == "__main__":
