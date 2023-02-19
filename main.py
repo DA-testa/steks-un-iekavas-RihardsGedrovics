@@ -1,5 +1,5 @@
 # python3
-
+#Rihards Gedrovics 221RDC023 18. grupa
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -36,5 +36,5 @@ def main():
         print(mismatch)
     else:
         print(mismatch)
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
